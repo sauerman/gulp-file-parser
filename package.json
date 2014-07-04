@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,11 @@
   "dependencies": {
     "gulp-util": "^2.2.19",
     "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "es6-promise": "^1.0.0",
+    "gulp": "^3.8.5",
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
   }
 }
