@@ -38,7 +38,7 @@ module.exports = function (options) {
 
 	        if (file.isBuffer()) {
 	            try {
-	            	var args = [file.contents.toString()];
+	            	var args = [file.contents.toString(), file.path];
 	            	opts.forEach(function (opt) { args.push(opt); });
 
                     var result = parseFunc.apply(null, args);
