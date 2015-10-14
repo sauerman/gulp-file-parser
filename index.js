@@ -66,7 +66,7 @@ module.exports = function (options) {
                 if (EXTENSION) {
                     file.path = gutil.replaceExtension(file.path, EXTENSION);
                 }
-                callback(null, file);
+                callback(null);
             }
 
             function reject (err) {
